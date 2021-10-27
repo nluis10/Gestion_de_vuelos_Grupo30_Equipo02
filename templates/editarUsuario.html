@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<main class="back-img">
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Editar Usuario</h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/perfil">Perfil de usuario</a></li>
+            <li class="breadcrumb-item active">Editar usuario</li>
+        </ol>
+        <div class="row">
+
+            <div class="card-body">
+                <form action="" method="post">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                    <div class="row mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-5">
+                            <div class="form-floating mb-3 mb-md-0">
+                                <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" />
+                                <label for="inputFirstName">Nombre</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-5">
+                            <div class="form-floating">
+                                <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" />
+                                <label for="inputLastName">Apellido</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-5">
+                            <div class="form-floating mb-3 mb-md-0">
+                                <label for=""></label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleccionar tipo de documento</option>
+                                    <option value="1">Cedula de ciudadania</option>
+                                    <option value="2">Tarjeta de identidad</option>
+                                    <option value="3">Cedula de extranjeria</option>
+                                    <option value="4">Pasaporte</option>
+                                    <option value="5">Permiso especial de permanencia</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-5">
+                            <div class="form-floating">
+                                <input class="form-control" id="inputDocument" type="text" placeholder="Enter your last name" />
+                                <label for="inputDocument">Numero de documento</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-5">
+                            <div class="form-floating mb-3 mb-md-0">
+                                <label for=""></label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleccionar el sexo</option>
+                                    <option value="1">Masculino</option>
+                                    <option value="2">Femenino</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-5">
+                            <div class="form-floating">
+                                <input class="form-control" id="inputPhone" type="text" placeholder="Enter your last name" />
+                                <label for="inputPhone">Numero de telefono</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-5">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
+                                <label for="inputEmail">Correo electronico</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-5">
+                            <div class="form-floating mb-3 mb-md-0">
+                                <label for=""></label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleccionar el tipo de usuario</option>
+                                    <option value="1">Administrador</option>
+                                    <option value="2">Piloto</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-5">
+                            <div class="form-floating mb-3 mb-md-0">
+                                <input class="form-control" id="inputPassword" type="password" placeholder="Create a password" />
+                                <label for="inputPassword">Contraseña</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-5">
+                            <div class="form-floating mb-3 mb-md-0">
+                                <input class="form-control" id="inputPasswordConfirm" type="password" placeholder="Confirm password" />
+                                <label for="inputPasswordConfirm">Confirmar contraseña</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 mb-0 col-md-2">
+                        <div class="d-grid"><input type="submit" class="btn btn-primary btn-block" value="Editar" ></div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

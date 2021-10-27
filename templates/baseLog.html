@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Gestión de Vuelos</title>
+        <link href={{ url_for('static', filename='css/styles.css') }} rel="stylesheet" />
+        <script src={{ url_for('static', filename='js/all.min.js ') }} crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-primary-log">
+        <div id="layoutAuthentication">
+            <div id="layoutAuthentication_content">
+
+            {% block contenido %}
+                
+            {% endblock %}
+
+            </div>
+            <div id="layoutAuthentication_footer">
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Gestión de Vuelos 2021</div>
+                            <div>
+                                <a class="text-link-w" href="/privacidad">Politicas de privacidad</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src={{ url_for('static', filename='js/bootstrap.bundle.min.js') }} crossorigin="anonymous"></script>
+        <script src={{ url_for('static', filename='js/scripts.js') }}></script>
+    </body>
+</html>

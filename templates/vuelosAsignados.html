@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<main>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Vuelos asignados</h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/perfil">Perfil de usuario</a></li>
+            <li class="breadcrumb-item active">Vuelos asignados</li>
+        </ol>
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-plane me-1"></i>
+                Vuelos asignados
+            </div>
+            <div class="card-body">
+                <table id="datatablesVuelos">
+                    <thead>
+                        <tr>
+                            <th>Numero de vuelo</th>
+                            <th>Avion asignado</th>
+                            <th>Ciudad origen</th>
+                            <th>Ciudad destino</th>
+                            <th>Fecha salida</th>
+                            <th>Fecha llegada</th>
+                            <th>Tipo de vuelo</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1010</td>
+                            <td>2000</td>
+                            <td>Barranquilla</td>
+                            <td>Medellin</td>
+                            <td>27/10/2021 08:00 AM</td>
+                            <td>27/10/2021 09:15 AM</td>
+                            <td>Nacional</td>
+                            <td>A tiempo</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>3000</td>
+                            <td>Medellin</td>
+                            <td>Bogota</td>
+                            <td>27/10/2021 10:00 AM</td>
+                            <td>27/10/2021 11:00 AM</td>
+                            <td>Nacional</td>
+                            <td>A tiempo</td>
+                        </tr>
+                        <tr>
+                            <td>3030</td>
+                            <td>4000</td>
+                            <td>Bogota</td>
+                            <td>Miami</td>
+                            <td>27/10/2021 10:45 AM</td>
+                            <td>27/10/2021 02:45 PM</td>
+                            <td>Internacional</td>
+                            <td>A tiempo</td>
+                        </tr>
+                        <tr>
+                            <td>4040</td>
+                            <td>5000</td>
+                            <td>Miami</td>
+                            <td>Bogota</td>
+                            <td>27/10/2021 03:30 PM</td>
+                            <td>27/10/2021 07:30 PM</td>
+                            <td>Internacional</td>
+                            <td>A tiempo</td>
+                        </tr>
+                        <tr>
+                            <td>5050</td>
+                            <td>6000</td>
+                            <td>Bogota</td>
+                            <td>Barranquilla</td>
+                            <td>27/10/2021 08:15 PM</td>
+                            <td>27/10/2021 09:45 PM</td>
+                            <td>Nacional</td>
+                            <td>A tiempo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

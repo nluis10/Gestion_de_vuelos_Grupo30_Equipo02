@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<main class="back-img">
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Perfil de Usuario</h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+            <li class="breadcrumb-item active">Perfil de Usuario</li>
+        </ol>
+        <div class="row">
+            <div class="card bg-primary-white mb-4 d-inline-block col-xl-8 col-lg-10 col-md-12">
+                <div class="card-body text-black-bold"> Información</div>
+                <div class=" card-header d-inline-block col-4">Correo electronico:</div>
+                <div class="card-header d-inline-block col-7">nlbarrios@uninorte.edu.co</div>
+                <div class=" card-header d-inline-block col-4">Tipo de Usuario:</div>
+                <div class="card-header d-inline-block col-7">ADMIN</div>
+                <div class=" card-header d-inline-block col-4">Nombre:</div>
+                <div class="card-header d-inline-block col-7">Nestor</div>
+                <div class=" card-header d-inline-block col-4">Apellido:</div>
+                <div class="card-header d-inline-block col-7">Barrios</div>
+                <div class=" card-header d-inline-block col-4">Cedula</div>
+                <div class="card-header d-inline-block col-7">1.234.567.890</div>
+                <div class=" card-header d-inline-block col-4">Numero de telefono</div>
+                <div class="card-header d-inline-block col-7">3001234567</div>
+                <div class=" card-header d-inline-block col-4">Sexo</div>
+                <div class="card-header d-inline-block col-7">Masculino</div>
+                <div class="card-header d-inline-block col-4"><a class="btn btn-primary"  href="/editar_usuario">Editar datos</a></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-primary text-black-bold mb-4">
+                    <div class="card-body"><i class="fas fa-user"></i> Agregar usuario</div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-black stretched-link" href="/agregar_usuario"></a>
+                        <div class="small text-black"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-primary text-black-bold mb-4">
+                    <div class="card-body"><i class="fas fa-plane"></i> Ver vuelos asignados</div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-black stretched-link" href="/vuelos_asignados"></a>
+                        <div class="small text-black"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
